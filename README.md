@@ -12,6 +12,7 @@ Once added, you must require the main Lua module in scripts via
 local defwindow = require("defwindow.defwindow")
 ```
 
+Make sure you have Shared State enabled for scripts in your game.project file
 
 ## Usage
 If you're using a module which needs to have a Window callback function while you also want to have a callback function elsewhere then use DefWindow.
