@@ -26,10 +26,10 @@ defwindow.init()
 Then you can add as many listener callback functions as you wish in any number of scripts
 
 ```
-defwindow.add_listiner(my_listener_function_1)
+defwindow.add_listener(my_listener_function_1)
 ```
 ```
-defwindow.add_listiner(my_listener_function_2)
+defwindow.add_listener(my_listener_function_2)
 ```
 
 Keep your callback functions in your main script which is never unloaded.
