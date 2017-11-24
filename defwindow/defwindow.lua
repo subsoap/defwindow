@@ -34,7 +34,6 @@ local function window_listener(self, event, data)
 	end
 	
 	if event == window.WINDOW_EVENT_RESIZED then
-		pprint(data)
 		M.window_width = data.width
 		M.window_height = data.height
 	end
