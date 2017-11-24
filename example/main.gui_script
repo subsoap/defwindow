@@ -2,6 +2,7 @@ local defwindow = require("defwindow.defwindow")
 
 local function hello(self, event, data)
 	print("hi")
+	print(defwindow.window_width)
 end
 local function hello2(self, event, data)
 	print("hello")
@@ -12,6 +13,7 @@ function init(self)
 	defwindow.init()
 	defwindow.add_listener(hello)
 	defwindow.add_listener(hello2)
+	print(defwindow.get_window_size())
 end
 
 function final(self)

@@ -91,7 +91,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 1200.0
+    x: 1300.0
     y: 800.0
     z: 0.0
     w: 1.0
@@ -104,7 +104,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Resize or minimize the window to test the callbacks printed to console in this example."
+  text: "Resize or click to another window to test the callbacks printed to console in this example."
   font: "system_font"
   id: "text1"
   xanchor: XANCHOR_NONE

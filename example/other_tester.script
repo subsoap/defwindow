@@ -7,6 +7,7 @@ end
 function init(self)
 	defwindow.init()
 	defwindow.add_listener(hello)
+	
 end
 
 function final(self)
