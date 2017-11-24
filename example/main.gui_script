@@ -1,0 +1,38 @@
+local defwindow = require("defwindow.defwindow")
+
+local function hello(self, event, data)
+	print("hi")
+end
+local function hello2(self, event, data)
+	print("hello")
+end
+
+
+function init(self)
+	defwindow.init()
+	defwindow.add_listener(hello)
+	defwindow.add_listener(hello2)
+end
+
+function final(self)
+	
+end
+
+function update(self, dt)
+
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
