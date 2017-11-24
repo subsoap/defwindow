@@ -23,7 +23,7 @@ DefWindow is simple and easy to use. First initialize DefWindow
 defwindow.init()
 ```
 
-Then you can add as many listener callback functions as you wish
+Then you can add as many listener callback functions as you wish in any number of scripts
 
 ```
 defwindow.add_listiner(my_listener_function_1)
@@ -40,4 +40,6 @@ You can clear all callback functions at once if you need to, but you probably sh
 defwindow.clear_listeners()
 ```
 
-DefWindow also provides the current window size which is updated as the window is resized... although this should really be a core feature of the Window API.
+DefWindow also provides the current window size which is updated as the window is resized.
+
+If the initial window size is not accurate then use DefOS. Attempting to use DefWindow with your render script will not work as "window" is not available there and so breaks.

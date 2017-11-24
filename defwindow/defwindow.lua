@@ -8,8 +8,8 @@ M.initilized = false
 -- Really the Window API should include this information
 -- It would be better if default render script also put window width and height into window on init
 -- some possible future proofing here
-M.window_width = window.window_width or tonumber(sys.get_config("display.width", 960))
-M.window_height = window.window_height or tonumber(sys.get_config("display.height", 640))
+M.window_width = M.window_width or window.window_width or tonumber(sys.get_config("display.width", 960))
+M.window_height = M.window_width or window.window_height or tonumber(sys.get_config("display.height", 640))
 
 
 M.DIMMING_OFF = window.DIMMING_OFF
