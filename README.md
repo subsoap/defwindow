@@ -4,7 +4,7 @@ Extra functionality for Defold's Window API
 ## Installation
 You can use DefWindow in your own project by adding this project as a [Defold library dependency](http://www.defold.com/manuals/libraries/). Open your game.project file and in the dependencies field under project add:
 
-	https://github.com/subsoap/defwindow/archive/master.zip
+https://github.com/subsoap/defwindow/archive/master.zip
   
 Once added, you must require the main Lua module in scripts via
 
@@ -14,5 +14,29 @@ local defwindow = require("defwindow.defwindow")
 
 
 ## Usage
+If you're using a module which needs to have a Window callback function while you also want to have a callback function elsewhere then use DefWindow.
 
-##
+DefWindow is simple and easy to use. First initialize DefWindow
+
+```
+defwindow.init()
+```
+
+Then you can add as many listener callback functions as you wish
+
+```
+defwindow.add_listiner(my_listener_function_1)
+```
+```
+defwindow.add_listiner(my_listener_function_2)
+```
+
+Keep your callback functions in your main script which is never unloaded.
+
+You can clear all callback functions at once if you need to, but you probably shouldn't do this.
+
+```
+defwindow.clear_listeners()
+```
+
+DefWindow also provides the current window size which is updated as the window is resized... although this should really be a core feature of the Window API.
